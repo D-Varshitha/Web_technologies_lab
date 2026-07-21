@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Portal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>Job application portal</h1>
+    
+    <div class="form-container">
+        <h2>Register to access the portal</h2>
+        <form>
+            <label for="name">Enter your name</label>
+            <input type="text" id="name" name="name" required>
+            <p id="name-error" class="error"></p>
+            <br>
+            
+            <label for="email">Enter your Email</label>
+            <input type="email" id="email" name="email" required>
+            <p id="email-error" class="error"></p>
+            <br>
+            
+            <label for="phone">Enter phone number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <p id="phone-error" class="error"></p>
+            <br>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <p id="password-error" class="error"></p>
+            <br>
+            
+            <label for="confirm-password">Confirm password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <p id="confirm-error" class="error"></p>
+            <br>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div class="form-container" id="job-form" style="display:none;">
+        <h2>Job Application Form</h2>
+        <form id="application-form">
+            <label for="position">Position</label>
+            <select id="position" required> 
+                <option value="">--Select Position--</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Full Stack Developer</option>
+                <option>Software Engineer</option>
+            </select>
+            <p id="position-error" class="error"></p>
+
+            <label for="level">Job Level</label>
+            <select id="level" required>
+                <option value="">--Select Level--</option>
+                <option>Intern</option>
+                <option>Junior</option>
+                <option>Mid-Level</option>
+                <option>Senior</option>
+            </select>
+            <p id="level-error" class="error"></p>
+
+            <label for="experience">Experience (in Years)</label>
+            <input type="number" id="experience" min="0" max="30" name="experience" required> 
+            <p id="experience-error" class="error"></p>
+
+            <label for="skills">Skills</label>
+            <input type="text" id="skills" name="skills" required> 
+            <p id="skills-error" class="error"></p>
+
+
+            <label for="project">Describe about your project</label>
+            <textarea id="project" rows="5" required></textarea>
+            <p id="project-error" class="error"></p>
+
+
+            <label for="resume">Upload the Resume</label>
+            <input type="file" id="resume" accept=".pdf,.doc,.docx" name="resume" required > 
+            <p id="resume-error" class="error"></p>
+
+            <button type="subimt">Submit</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
