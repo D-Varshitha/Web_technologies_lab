@@ -1,0 +1,17 @@
+we are creating the ObjectID to convert the string to ObjectID
+when we get the id from the url it is in the string format 
+but mongodb has objects in it 
+so we convert inorder to query the database
+
+
+findOne() → returns the actual document.
+insertOne() → returns an operation result; insertedId gives the new document's ID.
+updateOne() → matchedCount = documents found; modifiedCount = documents actually changed.
+deleteOne() → deletedCount = documents deleted.
+deletedCount = 0 does not mean MongoDB failed; it means no document matched.
+insertedId is useful for sending the newly created post's ID back to React.
+MongoDB operation results tell Express what happened, allowing Express to return the appropriate HTTP status.
+
+!!!!!
+mongodb doesnt need any data schema
+but "mongoose" required the schema
