@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+input,
+select {
+  padding: 10px;
+  width: 180px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 8px lightgray;
+}
+
+.stock {
+  color: green;
+  font-weight: bold;
+}
+
+.out {
+  color: red;
+  font-weight: bold;
+}
